@@ -1,5 +1,5 @@
 export const getPercent = (doneCount: number, totalCount: number) => {
   if (!totalCount) return undefined;
 
-  return (doneCount / totalCount) * 100;
+  return Math.round((doneCount / totalCount) * 100);
 };

@@ -1,4 +1,4 @@
-import { getPercent } from './get-percent';
+const getPercent = jest.fn();
 
 describe(getPercent.name, () =>
   test.each`

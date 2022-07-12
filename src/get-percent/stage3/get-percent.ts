@@ -1,1 +1,5 @@
-export const getPercent = (doneCount: number, totalCount: number) => (doneCount / totalCount) * 100;
+export const getPercent = (doneCount: number, totalCount: number) => {
+  if (!totalCount) return undefined;
+
+  return (doneCount / totalCount) * 100;
+};
